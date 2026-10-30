@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="TfIycVDVuDK-_FZnDkX3">
+    <mxGraphModel dx="1839" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sloLLcM806yXVFyIXddx-3" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="старт&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="96" x="354" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-6" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Проверка профиля и прав" vertex="1">
+          <mxGeometry height="60" width="120" x="342" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-8" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-9" connectable="0" parent="sloLLcM806yXVFyIXddx-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="ДА&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3811" y="-1" as="geometry">
+            <mxPoint x="1" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-11" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-12" connectable="0" parent="sloLLcM806yXVFyIXddx-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="НЕТ&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4923" y="-2" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Профиль одобрен&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="362" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-16" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-7" parent="1" style="whiteSpace=wrap;html=1;" value="Выбор авто" vertex="1">
+          <mxGeometry height="60" width="120" x="502" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-14" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-10" parent="1" style="whiteSpace=wrap;html=1;" value="Отказ в аренде" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Конец&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="210" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-18" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-15" parent="1" style="whiteSpace=wrap;html=1;" value="Поездка и парковка" vertex="1">
+          <mxGeometry height="60" width="120" x="502" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-20" edge="1" parent="1" source="sloLLcM806yXVFyIXddx-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sloLLcM806yXVFyIXddx-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-17" parent="1" style="whiteSpace=wrap;html=1;" value="Завершение аренды и оплата" vertex="1">
+          <mxGeometry height="60" width="120" x="502" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="sloLLcM806yXVFyIXddx-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Конец&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="522" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
