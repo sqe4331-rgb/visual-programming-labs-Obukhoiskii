@@ -6,4 +6,4 @@ flowchart TD
     C --> End([Конец])
     B -- Да --> D[Одобрить заявку]
     D --> End
-```Fix flowchart spaces
+```
