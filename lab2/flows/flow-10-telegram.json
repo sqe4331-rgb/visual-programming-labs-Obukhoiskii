@@ -1,0 +1,198 @@
+[
+    {
+        "id": "flow_10",
+        "type": "tab",
+        "label": "2.10 Telegram",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "n_2_10_recv",
+        "type": "telegram receiver",
+        "z": "flow_10",
+        "name": "Приём",
+        "bot": "n_2_10_config",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "hasinput": false,
+        "inputs": 0,
+        "handleallupdates": false,
+        "handleprocessupdates": false,
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "n_2_10_func_echo",
+                "n_2_10_cmd_time",
+                "n_2_10_cmd_start"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "n_2_10_func_echo",
+        "type": "function",
+        "z": "flow_10",
+        "name": "Эхо (текст)",
+        "func": "var chatId = msg.payload.chatId || (msg.payload.chat && msg.payload.chat.id);\nvar text = msg.payload.text || msg.payload.content || 'Нет текста';\nmsg.payload = { chatId: chatId, type: 'message', content: text };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "n_2_10_echo"
+            ]
+        ]
+    },
+    {
+        "id": "n_2_10_cmd_start",
+        "type": "telegram command",
+        "z": "flow_10",
+        "name": "/start",
+        "command": "/start",
+        "language": "",
+        "bot": "n_2_10_config",
+        "outputs": 1,
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "n_2_10_func_start"
+            ]
+        ]
+    },
+    {
+        "id": "n_2_10_func_start",
+        "type": "function",
+        "z": "flow_10",
+        "name": "Текст /start",
+        "func": "var chatId = msg.payload.chatId || (msg.payload.chat && msg.payload.chat.id);\nmsg.payload = { chatId: chatId, type: 'message', content: 'Привет! Бот лабораторной работы №2 запущен.' };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "n_2_10_send_start"
+            ]
+        ]
+    },
+    {
+        "id": "n_2_10_send_start",
+        "type": "telegram sender",
+        "z": "flow_10",
+        "name": "Ответ /start",
+        "bot": "n_2_10_config",
+        "outputs": 1,
+        "x": 800,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "n_2_10_cmd_time",
+        "type": "telegram command",
+        "z": "flow_10",
+        "name": "/time",
+        "command": "/time",
+        "language": "",
+        "bot": "n_2_10_config",
+        "outputs": 1,
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "n_2_10_func_time"
+            ]
+        ]
+    },
+    {
+        "id": "n_2_10_func_time",
+        "type": "function",
+        "z": "flow_10",
+        "name": "Текст /time",
+        "func": "var chatId = msg.payload.chatId || (msg.payload.chat && msg.payload.chat.id);\nmsg.payload = { chatId: chatId, type: 'message', content: 'Текущее время: ' + new Date().toLocaleString() };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "n_2_10_send_time_out"
+            ]
+        ]
+    },
+    {
+        "id": "n_2_10_send_time_out",
+        "type": "telegram sender",
+        "z": "flow_10",
+        "name": "Ответ /time",
+        "bot": "n_2_10_config",
+        "outputs": 1,
+        "x": 800,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "n_2_10_echo",
+        "type": "telegram sender",
+        "z": "flow_10",
+        "name": "Эхо",
+        "bot": "n_2_10_config",
+        "outputs": 1,
+        "x": 590,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "n_2_10_config",
+        "type": "telegram bot",
+        "botname": "Lab2 Obukhoiskii Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "pollinterval": "",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "",
+        "socksusername": "",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "",
+        "localbotport": "",
+        "publicbotport": "",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "38fd1bde8e6c1e58",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-telegrambot": "19.0.3"
+        }
+    }
+]
