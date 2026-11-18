@@ -1,16 +1,21 @@
-\# API Documentation
+# API Documentation
 
-\## GET /api/text
+## GET /api/text
+Возвращает простой текст.
+
+Пример: [http://localhost:1880/api/text](http://localhost:1880/api/text)
 
 Ответ: `Это простой текстовый ответ от Node-RED.`
 
-\## GET /api/info
+## GET /api/info
+Возвращает JSON с двумя полями.
+
+Пример: [http://localhost:1880/api/info](http://localhost:1880/api/info)
 
 Ответ: `{"status":"ok","author":"Обуховский Кирилл","group":"УИР-241"}`
 
-\## GET /api/items/:id
+## GET /api/items/:id
+Возвращает объект по id.
 
-\- Успех (/api/items/1): `{"id":1,"name":"Item One","author":"Обуховский"}`
-
-\- Ошибка (/api/items/999): 404 `{"error":"Not found","id":"999"}`
-
+- Успех: [http://localhost:1880/api/items/1](http://localhost:1880/api/items/1) → `{"id":1,"name":"Item One","author":"Обуховский"}`
+- Ошибка: [http://localhost:1880/api/items/999](http://localhost:1880/api/items/999) → 404 `{"error":"Not found","id":"999"}`
