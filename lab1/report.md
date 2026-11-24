@@ -7,21 +7,25 @@
 Процесс аренды автомобиля (каршеринг). Пользователь выбирает автомобиль через приложение, система проверяет его водительские права и возраст, после чего клиент оплачивает поездку и получает доступ к открытию дверей. В процессе есть ветвления (одобрение или отказ в аренде) и параллельные действия (например, проверка прав и баланса одновременно).
 
 ## Диаграммы
-- BPMN: 
-![process-bpmn](diagrams/process-bpmn.png)
-- UML Activity: 
-![activity-uml](diagrams/activity-uml.png)
-- Sequence: [sequence.md](docs/sequence.md)
-- Flowchart: [flowchart.md](docs/flowchart.md)
+**BPMN:**
+![BPMN](diagrams/process-bpmn.png)
+
+**UML Activity:**
+![UML Activity](diagrams/activity-uml.png)
+
+**Sequence:** [sequence.md](docs/sequence.md)
+**Flowchart:** [flowchart.md](docs/flowchart.md)
 
 ## Diff
 Для проверки работы Git я изменил исходную BPMN-диаграмму (добавил элемент) и сравнил версии с помощью команды `git diff`.
 - Для текстового файла (.bpmn) Git показал измененные строки XML-кода (добавленные элементы отмечены зеленым, удаленные — красным).
 - Для бинарного файла (.png) Git выдал сообщение "Binary files differ", так как изображения невозможно сравнить построчно.
 
-Скриншоты результата diff:
-![diff-bpmn](diff-bpmn.png)
-![diff-png](diff-png.png)
+**Скриншот diff для .bpmn:**
+![diff bpmn](diff-bpmn.png)
+
+**Скриншот diff для .png:**
+![diff png](diff-png.png)
 
 ## Выводы
 В ходе работы я освоил систему контроля версий Git и платформу GitHub, научился работать с SSH-ключами, создавать репозитории и делать коммиты. Также я освоил 4 нотации для моделирования бизнес-процессов: BPMN, UML Activity, Sequence и Flowchart, и научился генерировать их описания с помощью ИИ.
